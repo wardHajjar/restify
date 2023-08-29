@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+.cursive{
+    font-family: 'Sofia', sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+    height: 3.5rem; 
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-left: 1rem; 
+    margin-top: 0; 
+}
+
+.nav-link {
+    color: #fff;
+    margin-right: 0.25rem;
+    margin-top: 1rem; 
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav > li {
+    margin-right: 1rem;
+}
+
+.text-click:hover {
+    color: lightcoral; 
+}  
+
+.text-white{
+    color: white; 
+}
+
+.badge-danger{
+    color: red; 
+}
