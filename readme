@@ -1,0 +1,50 @@
+Restify is a web application designed to be a marketplace that allows users to search for short-term rentals or to put up their properties for renting. Restify includes the following features: 
+- Accounts: 
+    - Signup, login and logout support with backend and frontend validation.
+    - Users can view and modify personal information on their profile.  
+- Properties:
+    - Users can search through properties by city, country, number of guests allowed and number of bedrooms. Users can filter those results by price or rating. 
+    - Users can click on search results to view detailed information regarding the property and request a booking. If the property clicked belongs to the user then they will be able to modify its details. 
+    - Users can list properties and become hosts. 
+- Reservations:     
+    - Reservations can be modified as follows: 
+        - A user can request to book a property and the host has to approve or deny the booking. 
+        - Once a request has been approved, the user can request to cancel the booking but the cancellation request can be either accepted or 
+        denied by the host. 
+        - A host can terminate a booking at any time. 
+    - Users can view and modify reservations they made as guests and reservations made for their properties as hosts. Reservations can be filtered by their status: pending, approved, denied, completed, cancelled, terminated, pending cancellation, in progress. 
+- Notifications: 
+    - Notifications are sent when a change to a reservation has been made as follows: 
+        - A host is notified if a booking or cancellation request has been made. 
+        - A guest is notified if their booking or cancellation request has been approved or denied. 
+    - New notifications are marked unread. Users can mark notifications as read or delete them.
+- Additional: 
+    - Pagination support
+    - Validation for any data entered by user when creating listings and reservations. 
+    - Warning messages asking for confirmation when making irreversible decisions such as terminating or denying reservations. 
+
+Future improvements: 
+    - Allowing users to add pictures and videos. 
+    - A comment and review system for users and hosts. 
+    - Dynamic pricing: different prices for different ranges of dates.
+    - Separate page to view all properties listed past and present instead of being combined within the search function. 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Running Restify: 
+
+-Set up in P3/frontend directory: 
+    npm install
+
+-Set up in P3/backend directory: 
+    pip install -r requirements.txt
+
+-Running the frontend: 
+    cd frontend 
+    npm start 
+
+-Running the backend: 
+    cd backend/restify
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+----------------------------------------------------------------------------------------------------------------------------------------------
+
